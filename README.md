@@ -26,3 +26,34 @@ When you need your SOL to start **fresh & untraceable**.
 - Private swaps (roadmap)
 
 ## Project Structure
+
+anchor/         → Solana on-chain program (Rust + Anchor)
+circuits/       → ZK circuits (Circom)
+artifacts/      → Compiled proofs
+audits/         → Security audit reports
+scripts/        → Utilities & SDK helpers
+
+## Quick Start (Dev)
+```bash
+# Prerequisites: Rust, Solana CLI ≥2.1, Anchor ≥0.32, Node ≥20, Circom ≥2.1
+
+git clone https://github.com/YOUR_USERNAME/privatelycash.git
+cd privatelycash/anchor
+anchor build
+anchor test
+
+# Deploy to devnet (after config Anchor.toml)
+anchor deploy --provider.cluster devnet
+
+Security Note: After mainnet deploy → transfer upgrade authority to multisig immediately!Security & AuditsPrivacy projects are high-risk.
+All code will be fully audited before mainnet.
+Reports will be published here in /audits/.
+Bug bounty planned post-audit.DisclaimerThis is experimental privacy technology.
+Use at your own risk.
+Not financial advice. Not for illicit activities.
+We comply with applicable laws (OFAC-aware design).Contact & CommunityX/Twitter: @PrivatelyCash
+  
+Website: (coming soon – privately.cash or similar)
+
+Contributions welcome! Open an issue or PR.
+
