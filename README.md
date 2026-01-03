@@ -37,7 +37,7 @@ scripts/        → Utilities & SDK helpers
 ```bash
 # Prerequisites: Rust, Solana CLI ≥2.1, Anchor ≥0.32, Node ≥20, Circom ≥2.1
 
-git clone https://github.com/YOUR_USERNAME/privatelycash.git
+git clone https://github.com/privatelycash/privatelycash.git
 cd privatelycash/anchor
 anchor build
 anchor test
